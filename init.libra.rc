@@ -289,6 +289,9 @@ on post-fs-data
     mkdir /data/misc/location/xtwifi 0770 gps gps
     mkdir /data/misc/location/gpsone_d 0770 system gps
 
+    #Create directory for hostapd
+    mkdir /data/hostapd 0770 system wifi
+
     # Audio
     mkdir /data/misc/audio 0770 audio audio
 
@@ -471,6 +474,13 @@ service time_daemon /system/bin/time_daemon
     class late_start
     user root
     group root
+
+service hostapd /system/bin/hostapd -dd /data/hostapd/hostapd.conf
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
 
 service ril-daemon1 /system/bin/rild -c 2
     class main
