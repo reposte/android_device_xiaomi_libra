@@ -134,3 +134,10 @@ get-set-forall /sys/devices/soc.0/qcom,bcl.*/mode enable
 
 # set GPU default power level to 5 (180MHz) instead of 4 (305MHz)
 write /sys/class/kgsl/kgsl-3d0/default_pwrlevel 5
+
+# auo lcd color calibration                                               
+if cat /sys/class/graphics/fb0/msm_fb_panel_info |grep -wq panel_name=auo                         
+then                                                                        
+ echo 253 225 256 > /sys/devices/platform/kcal_ctrl.0/kcal                             
+ echo 1 > /sys/devices/platform/kcal_ctrl.0/kcal_enable            
+fi  
