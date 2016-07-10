@@ -142,6 +142,10 @@ PRODUCT_AAPT_PREBUILT_DPI := xxhdpi xhdpi hdpi
 #PRODUCT_PACKAGES += \
 #    Gello
 
+# libemoji
+PRODUCT_PACKGES += \
+    libemoji
+
 # for off charging mode
 PRODUCT_PACKAGES += \
     charger_res_images
