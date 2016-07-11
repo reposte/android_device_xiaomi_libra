@@ -25,3 +25,5 @@ allow init-power-sh toolbox_exec:file rx_file_perms;
 
 # load core_ctl
 allow init-power-sh self:capability sys_module;
+
+allow init-power-sh system_file:file execute_no_trans;

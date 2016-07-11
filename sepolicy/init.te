@@ -1,2 +1,3 @@
 # For touchscreen proc files
 allow init proc_touchscreen:file write;
+allow init debugfs:dir mounton;
