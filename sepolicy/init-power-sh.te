@@ -18,6 +18,7 @@ allow init-power-sh sysfs_rqstats:dir r_dir_perms;
 # after the restorecon of /sys/. Allow init-power-sh to restorecon sysfs files
 # and symlinks to sysfs_devices_system_cpu
 allow init-power-sh sysfs:{ dir file lnk_file } relabelfrom;
+allow init-power-sh sysfs:file write;
 allow init-power-sh sysfs_devices_system_cpu:{ dir file lnk_file } relabelto;
 
 # execute toybox/toolbox
