@@ -35,7 +35,9 @@ BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_KERNEL_SEPARATED_DT := true
 BOARD_DTBTOOL_ARGS := -2
 TARGET_KERNEL_SOURCE := kernel/xiaomi/msm8992
+#TARGET_KERNEL_SOURCE := kernel/xiaomi/rr
 TARGET_KERNEL_CONFIG := blackhawk_libra_defconfig
+#TARGET_KERNEL_CONFIG := resurrection_libra_defconfig
 
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
