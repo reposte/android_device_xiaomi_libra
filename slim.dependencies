@@ -1,17 +1,17 @@
 [
   {
-    "repository": "android_kernel_xiaomi_msm8992",
+    "repository": "SlimRoms/android_kernel_xiaomi_msm8992",
     "target_path": "kernel/xiaomi/msm8992",
     "branch: " "mm6.0"
   },
   {
-    "repository": "android_external_stlport",
+    "repository": "SlimRoms/android_external_stlport",
     "target_path": "external/stlport",
     "branch:" "mm6.0"
   },
   {
-    "repository": "CyanogenMod/android_external_jpeg",
+    "repository": "SlimRoms/android_external_jpeg",
     "target_path": "external/jpeg",
-    "branch": "cm-13.0"
+    "branch": "mm6.0"
   }
 ]
