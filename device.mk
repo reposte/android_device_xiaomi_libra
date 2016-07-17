@@ -108,11 +108,6 @@ PRODUCT_COPY_FILES += \
     device/xiaomi/libra/hostapd/hostapd.deny:system/etc/hostapd/hostapd.deny \
     device/xiaomi/libra/hostapd/hostapd_default.conf:system/etc/hostapd/hostapd_default.conf
 
-PRODUCT_COPY_FILES += \
-    device/xiaomi/libra/wifi/hostapd.accept:system/etc/hostapd/hostapd.accept \
-    device/xiaomi/libra/wifi/hostapd.conf:system/etc/hostapd/hostapd_default.conf \
-    device/xiaomi/libra/wifi/hostapd.deny:system/etc/hostapd/hostapd.deny
-
 # Thermal engine
 PRODUCT_COPY_FILES += \
     device/xiaomi/libra/thermal-engine-8992.conf:system/etc/thermal-engine-8992.conf
