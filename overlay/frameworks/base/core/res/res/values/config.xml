@@ -319,6 +319,10 @@
          config to 7. -->
     <integer name="config_deviceHardwareKeys">83</integer>
 
+    <!-- Control path for disabling the capacitive hardware keys, if they exist.
+         For example: "/proc/touchpanel/keypad_enable"  -->
+    <string name="config_deviceHardwareKeysFilePath" translatable="false">/proc/touchscreen/nav_button_enable</string>
+
     <!-- Control the behavior when the user long presses the home button.
             0 - Nothing
             1 - Menu key
