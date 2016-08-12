@@ -2,14 +2,17 @@
 TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080
 
+# Inherit from those products. Most specific first.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+
 # Inherit some common CM stuff.
-$(call inherit-product, vendor/slim/config/common_full_phone.mk)
+$(call inherit-product, vendor/tesla/config/common_full_phone.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/xiaomi/libra/aosp_libra.mk)
+$(call inherit-product, device/xiaomi/libra/tesla_libra.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := slim_libra
+PRODUCT_NAME := tesla_libra
 PRODUCT_BRAND := Xiaomi
 TARGET_MANUFACTURER := Xiaomi
 PRODUCT_RESTRICT_VENDOR_FILES := false
