@@ -6,3 +6,6 @@ allow mediaserver init:unix_dgram_socket sendto;
 
 # For face processing
 allow mediaserver system_file:file execmod;
+
+# Allow ViPER4Android in enforcing mode.
+allow mediaserver mediaserver_tmpfs:file { read write execute };
