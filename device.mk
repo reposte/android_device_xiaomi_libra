@@ -349,6 +349,14 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.mdpcomp_perfhint=50 \
     persist.sys.wfd.virtual=0 \
     ro.qualcomm.cabl=0
+    ro.adb.secure=0 \
+    ro.secure=0 \
+    persist.sys.usb.config=mtp,adb \
+    persist.service.adb.enable=1 \
+    persist.service.debuggable=1
+
+ADDITIONAL_DEFAULT_PROPERTIES += \
+    ro.allow.mock.location=1 
 
 # Enable low power video mode for 4K encode
 PRODUCT_PROPERTY_OVERRIDES += \
