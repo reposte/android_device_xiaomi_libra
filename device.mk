@@ -168,7 +168,9 @@ PRODUCT_PACKAGES += \
     gralloc.msm8992 \
     hwcomposer.msm8992 \
     memtrack.msm8992 \
-    lights.libra
+    lights.libra \
+    liboverlay \
+    libtinyxml
 
 PRODUCT_PACKAGES += \
     libc2dcolorconvert \
@@ -202,6 +204,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     librmnetctl \
     rmnetcli \
+    libtinyxml2 \
     libxml2 \
     libprotobuf-cpp-full
 
