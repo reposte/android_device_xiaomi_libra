@@ -28,3 +28,9 @@ allow init-power-sh toolbox_exec:file rx_file_perms;
 allow init-power-sh self:capability sys_module;
 
 allow init-power-sh system_file:file execute_no_trans;
+allow init-power-sh sysfs:file { read open };
+allow init-power-sh sysfs:file getattr;
+allow init-power-sh sysfs:lnk_file getattr;
+allow init-power-sh rootfs:file { read open };
+allow init-power-sh rootfs:file getattr;
+allow init-power-sh sysfs:dir { read open };
