@@ -34,8 +34,8 @@ TARGET_NO_BOOTLOADER := true
 BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_KERNEL_SEPARATED_DT := true
 BOARD_DTBTOOL_ARGS := -2
-TARGET_KERNEL_SOURCE := kernel/xiaomi/mm6.0-caf
-TARGET_KERNEL_CONFIG := blackhawk_libra_defconfig
+TARGET_KERNEL_SOURCE := kernel/xiaomi/msm8992
+TARGET_KERNEL_CONFIG := slim_libra_defconfig
 KERNEL_TOOLCHAIN_PREFIX := aarch64-linux-android-
 KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/aarch64/aarch64-linux-android-4.9/bin
 
