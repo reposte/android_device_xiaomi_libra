@@ -148,6 +148,10 @@ PRODUCT_AAPT_PREBUILT_DPI := xxhdpi xhdpi hdpi
 PRODUCT_PACKGES += \
     libemoji
 
+# LibraDoze
+PRODUCT_PACKAGES += \
+    LibraDoze
+
 # for off charging mode
 WITH_CM_CHARGER := false
 
