@@ -162,6 +162,7 @@ OVERRIDE_RS_DRIVER:= libRSDriver_adreno.so
 BOARD_USES_QCOM_HARDWARE := true
 
 # RIL
+FEATURE_QCRIL_UIM_SAP_SERVER_MODE := true
 TARGET_RIL_VARIANT := caf
 
 # Enable dex-preoptimization to speed up first boot sequence
