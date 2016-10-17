@@ -366,6 +366,7 @@ ADDITIONAL_DEFAULT_PROPERTIES += \
 # Enable low power video mode for 4K encode
 PRODUCT_PROPERTY_OVERRIDES += \
     vidc.debug.level=1 \
+    vidc.debug.perf.mode=1 \
     vidc.enc.dcvs.extra-buff-count=2
 
 # Enable smooth streaming
