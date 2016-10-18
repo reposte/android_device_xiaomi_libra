@@ -5,4 +5,4 @@ binder_call(mediaserver, sensorservice_service);
 allow mediaserver init:unix_dgram_socket sendto;
 
 # Allow ViPER4Android in enforcing mode.
-allow mediaserver mediaserver_tmpfs:file { read write execute };
+#allow mediaserver mediaserver_tmpfs:file { read write execute };
