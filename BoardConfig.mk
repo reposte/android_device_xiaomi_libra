@@ -165,6 +165,7 @@ BOARD_USES_QCOM_HARDWARE := true
 # RIL
 FEATURE_QCRIL_UIM_SAP_SERVER_MODE := true
 TARGET_RIL_VARIANT := caf
+BOARD_GLOBAL_CFLAGS+= -DUSE_RIL_VERSION_11
 
 # Enable dex-preoptimization to speed up first boot sequence
 ifeq ($(HOST_OS),linux)
