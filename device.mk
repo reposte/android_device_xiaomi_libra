@@ -225,6 +225,11 @@ PRODUCT_PACKAGES += \
     wpa_supplicant.conf \
     xiaomi_hwaddrs
 
+# IPA Manager
+PRODUCT_PACKAGES += \
+    ipacm \
+    IPACM_cfg.xml
+
 # Camera
 PRODUCT_PACKAGES += \
     camera.msm8992 \
@@ -237,8 +242,8 @@ PRODUCT_PACKAGES += \
     Snap
 
 # Snap Config
-#PRODUCT_PROPERTY_OVERRIDES += \
-#    persist.camera.cpp.duplication=false
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.camera.cpp.duplication=false
 
 # Sensor & activity_recognition HAL
 PRODUCT_PACKAGES += \
