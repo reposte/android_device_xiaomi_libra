@@ -585,7 +585,6 @@ service bugreport /system/bin/dumpstate -d -p -B \
     class main
     disabled
     oneshot
-    keycodes 114 115 116
 
 service xiaomi_hwaddrs /system/bin/xiaomi_hwaddrs
     class core
