@@ -3,13 +3,13 @@ TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 800
 
 # Inherit some common CM stuff.
-$(call inherit-product, vendor/slim/config/common_full_phone.mk)
+$(call inherit-product, vendor/tesla/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/xiaomi/libra/aosp_libra.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := slim_libra
+PRODUCT_NAME := tesla_libra
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi-4c
 TARGET_MANUFACTURER := Xiaomi
