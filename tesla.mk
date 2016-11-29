@@ -4,6 +4,7 @@ TARGET_SCREEN_WIDTH := 800
 
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/tesla/config/common_full_phone.mk)
+$(call inherit-product, vendor/tesla/config/caf_fw.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/xiaomi/libra/aosp_libra.mk)
